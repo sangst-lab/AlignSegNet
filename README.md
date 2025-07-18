@@ -6,7 +6,10 @@ This is the source code for paper "AlignSegNet: Registration-Enhanced Segmentati
 The overview of our method. 
 </p>
 
-
+<div align=center><img width="1200" height="380" src="https://github.com/sangst-lab/AlignSegNet/blob/main/figures/Figure_2.jpg"/></div>
+<p align="left"> 
+The overview of our method. 
+</p>
 
 ## Requirements
 * albumentations==1.0.0
