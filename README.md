@@ -4,7 +4,7 @@ This is the source code for paper "AlignSegNet: Registration-Enhanced Segmentati
 <div align=center><img width="800" height="300" src="https://github.com/sangst-lab/AlignSegNet/blob/main/figures/Figure_1.jpg"/></div>
   <figcaption style="text-align:left; font-size:0.85em; line-height:1.4;">
     <small>
-      <strong>Figure 1.</strong>  
+      <strong>Illustration of the MRI–TRUS fusion‑guided biopsy and data fusion.</strong>  
       (a) Illustration of the MRI–TRUS fusion‑guided biopsy workflow. (b) Illustration of MRI–TRUS image fusion using different strategies.
     </small>
   </figcaption>
