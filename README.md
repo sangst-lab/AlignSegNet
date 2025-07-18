@@ -14,7 +14,7 @@ AlignSegNet is an end-to-end deep learning framework that jointly learns image r
 
 <div align=center><img width="1200" height="380" src="https://github.com/sangst-lab/AlignSegNet/blob/main/figures/Figure_2.jpg"/></div>
 <p align="left"> 
-<strong>The overview of our method</strong>strong>. 
+<strong>The overview of our method</strong>. 
 </p>
 
 Both registration and segmentation components are interchangeable, allowing easy adaptation to other multimodal medical imaging tasks.
