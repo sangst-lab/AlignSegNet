@@ -1,7 +1,7 @@
 # AlignSegNet
 This is the source code for paper "AlignSegNet: Registration-Enhanced Segmentation of Prostate Cancer in B-mode Ultrasound Images"
 
-<div align=center><img width="1000" height="350" src="https://github.com/sangst-lab/AlignSegNet/blob/main/figures/Figure_1.jpg"/></div>
+<div align=center><img width="800" height="300" src="https://github.com/sangst-lab/AlignSegNet/blob/main/figures/Figure_1.jpg"/></div>
   <figcaption style="text-align:left; font-size:0.85em; line-height:1.4;">
     <small>
       <strong>Figure 1.</strong>  
