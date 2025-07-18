@@ -1,5 +1,6 @@
 # AlignSegNet
 This is the source code for paper **AlignSegNet: Registration-Enhanced Segmentation of Prostate Cancer in B-mode Ultrasound Images**.
+
 AlignSegNet is an end-to-end deep learning framework that jointly learns image registration and segmentation to accurately localize prostate anatomy and cancerous lesions in real‑time ultrasound (TRUS) by leveraging pre‑acquired MRI information.
 
 <div align=center><img width="800" height="300" src="figures/Figure_1.jpg"/></div>
