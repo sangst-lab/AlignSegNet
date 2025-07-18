@@ -1,5 +1,5 @@
 # AlignSegNet
-This is the source code for paper **AlignSegNet: Registration-Enhanced Segmentation of Prostate Cancer in B-mode Ultrasound Images**。
+This is the source code for paper **AlignSegNet: Registration-Enhanced Segmentation of Prostate Cancer in B-mode Ultrasound Images**.
 AlignSegNet is an end-to-end deep learning framework that jointly learns image registration and segmentation to accurately localize prostate anatomy and cancerous lesions in real‑time ultrasound (TRUS) by leveraging pre‑acquired MRI information.
 
 <div align=center><img width="800" height="300" src="figures/Figure_1.jpg"/></div>
@@ -11,39 +11,13 @@ AlignSegNet is an end-to-end deep learning framework that jointly learns image r
     </small>
   </figcaption>
 
-Instead of naïve channel‑wise fusion, AlignSegNet applies an affine registration module upfront to bring MRI and TRUS into a common space, reducing misalignment and enabling more effective information sharing. A unified network trains registration and segmentation simultaneously. The registration module refines the fusion quality, while the segmentation branch benefits from better‑aligned inputs, yielding superior accuracy and stability. Both registration and segmentation components are interchangeable, allowing easy adaptation to other multimodal medical imaging tasks.
 
 <div align=center><img width="1200" height="380" src="https://github.com/sangst-lab/AlignSegNet/blob/main/figures/Figure_2.jpg"/></div>
 <p align="left"> 
-The overview of our method. 1. **Feature Extraction:** Dual CNN backbones extract modality‑specific features.  
-2. **Feature Fusion & Registration:** Pooled features are concatenated and fed into a Transformer‑based registration head that predicts a 3×4 affine transformation matrix.  
-3. **Warping & Refinement:** The predicted affine transform aligns the raw MRI and TRUS, whose features are then fused, upsampled, and passed to the segmentation branch.  
-4. **Segmentation:** A U‑Net decoder yields the prostate and lesion masks on the TRUS image.
+The overview of our method. Instead of naive channel‑wise fusion, AlignSegNet applies an affine registration module upfront to bring MRI and TRUS into a common space, reducing misalignment and enabling more effective information sharing. A unified network trains registration and segmentation simultaneously. The registration module refines the fusion quality, while the segmentation branch benefits from better‑aligned inputs, yielding superior accuracy and stability. Both registration and segmentation components are interchangeable, allowing easy adaptation to other multimodal medical imaging tasks.
 </p>
 
 Both registration and segmentation components are interchangeable, allowing easy adaptation to other multimodal medical imaging tasks.
-
-
-
-### Figure 7: Training Dynamics of Registration and Segmentation  
-<div align="center">
-  <img src="figures/Figure_7.jpg" width="800" alt="Figure 7: Epoch-wise performance">
-</div>
-
-**Description:**  
-- **Top Plot:** Prostate registration Dice score improves from ~0.50 to ~0.81 across epochs.  
-- **Bottom Plot:** Lesion segmentation Dice score climbs from zero (pre‑alignment) to ~0.35, demonstrating the synergistic benefit of joint training.
-
----
-
-## 📦 Quick Start
-
-1. **Clone the repository & install dependencies**  
-   ```bash
-   git clone https://github.com/yourusername/AlignSegNet.git
-   cd AlignSegNet
-   pip install -r requirements.txt
-
 
 ## Requirements
 * albumentations==1.0.0
@@ -60,7 +34,6 @@ Both registration and segmentation components are interchangeable, allowing easy
 In order to make it easier for the readers to reproduce and understand the code, I have provided a small amount of example data used in our experiment under the **dataset** folder, where provides six training, validation and test images.
 
 ## File declaration
-
 
 **main.py**: The codes for training, validating and testing.
 
