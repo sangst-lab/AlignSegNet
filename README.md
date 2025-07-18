@@ -7,14 +7,14 @@ AlignSegNet is an end-to-end deep learning framework that jointly learns image r
     <small>
       <strong>Illustration of the MRI–TRUS fusion‑guided biopsy and data fusion.</strong>  
 **(a)** Clinical workflow: a radiologist first segments the prostate and lesion on MRI, then maps that annotation onto live TRUS for targeted biopsy.  
-**(b)** Naïve fusion (top) fails when anatomical structures are misaligned. Applying AlignSegNet (bottom) yields well‑co‑localized prostate boundaries and lesions across both modalities.
+**(b)** Naive fusion (top) fails when anatomical structures are misaligned. Applying AlignSegNet (bottom) yields well‑co‑localized prostate boundaries and lesions across both modalities.
     </small>
   </figcaption>
 
 
 <div align=center><img width="1200" height="380" src="https://github.com/sangst-lab/AlignSegNet/blob/main/figures/Figure_2.jpg"/></div>
 <p align="left"> 
-<strong>The overview of our method</strong>strong>. Instead of naive channel‑wise fusion, AlignSegNet applies an affine registration module upfront to bring MRI and TRUS into a common space, reducing misalignment and enabling more effective information sharing. A unified network trains registration and segmentation simultaneously. The registration module refines the fusion quality, while the segmentation branch benefits from better‑aligned inputs, yielding superior accuracy and stability. Both registration and segmentation components are interchangeable, allowing easy adaptation to other multimodal medical imaging tasks.
+<strong>The overview of our method</strong>strong>. 
 </p>
 
 Both registration and segmentation components are interchangeable, allowing easy adaptation to other multimodal medical imaging tasks.
